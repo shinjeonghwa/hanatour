@@ -1,0 +1,1414 @@
+@charset "utf-8";
+
+* { 
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.clear::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-size: 16px;
+  line-height: 1.5;
+  width: 100%;
+  height: 1500px;
+}
+
+.wrap {
+  overflow: hidden;
+  width: 100%;
+}
+
+/*header*/
+header {
+  width: 100%;
+  height: 180px;
+  text-align: center;
+  background-color: #fff;
+}
+
+/* 상위헤더 */
+.hd1 {
+  width: 70%;
+  height: 70%;
+  margin: 0 auto;
+}
+
+/* 로고영역 */
+.logo {
+  width: 15%;
+  height: 100%;
+}
+
+.logo > a {
+  display: block;
+  width: 80%;
+  height: 30%;
+  margin-top: 73px;
+}
+
+.logo > a > img {
+  width: 100%;
+  height: 100%;
+}
+
+/*유틸영역 부모*/
+.search {
+  position: relative;
+  left: 0;
+  width: 35%;
+  height: 100%;
+}
+
+/* 검색창 */
+.search > input {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  width: 90%;
+  height: 35%;
+  border: 2px solid #000;
+  padding: 0 10px ;
+  border-radius: 24px;
+}
+
+/* 돋보기 아이콘 */
+.search > i {
+  position: absolute;
+  left: 85%;
+  bottom: 25px;
+  margin-right: 100px;  
+}
+
+/* hot */
+.hot-wrap {
+  position: relative;
+  text-align: left;
+  top: 50%;
+  line-height: 55px;
+  width: 30%;
+  height: 100%;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.hot-wrap.fl.slick-initialized.slick-slider.slick-vertical >
+.slick-list.draggable >
+.slick-track >
+.slick-slide.slick-current.slick-active > a > span:first-child,
+.hot-wrap.fl.slick-initialized.slick-slider.slick-vertical >
+.slick-list.draggable >
+.slick-track >
+.slick-slide > a > span:first-child {
+  font-size: 12px;
+  color: #8f32d9;
+  border: 1px solid #8f32d9;
+  padding: 3px;
+  border-radius: 0 5px 0px 5px ; 
+}
+
+.hot-wrap.fl.slick-initialized.slick-slider.slick-vertical >
+.slick-list.draggable >
+.slick-track >
+.slick-slide.slick-current.slick-active > a > span:nth-child(2), 
+.hot-wrap.fl.slick-initialized.slick-slider.slick-vertical >
+.slick-list.draggable >
+.slick-track >
+.slick-slide > a > span:nth-child(2)  {
+  font-size: 12px;
+  color: #000;
+}
+
+
+/* 유틸영역 */
+.spot-wrap {
+   width: 15%;
+   height: 100%;
+   font-size: 12px;
+}
+
+/* spot1 = 로그인, 회원가입, 고객센터 */
+.spot1 {
+  width: 100%;
+  height: 40%;
+  padding: 10% 0;
+}
+
+.spot1 > li{
+  width: 33.3%;
+  height: 100%;
+  text-align: center;
+  line-height: 40px;
+}
+
+.spot1 > li > a {
+  color: #555;
+}
+
+.spot1 > li:first-child > a > span  {
+  color: red;
+}
+
+.spot1 > li:hover > a{
+  color: #8f32d9;
+}
+
+/*spot2 */
+.spot2 {
+  width: 100%;
+  height: 60%;
+}
+
+.spot2 > li {
+  width: 33.3%;
+  height: 100%;
+}
+
+.spot2 > li > a {
+  display: block;
+  padding: 30% 0;
+}
+
+.spot2 > li > a > i {
+  font-size: 25px;
+}
+
+.spot2 > li > a:hover > i {
+  color: #8f32d9;
+}
+
+.spot2 > li > a > i > p {
+  font-size: 12px;
+  font-weight: normal;
+  padding: 5px 0;
+  align-items: center;
+}
+
+/* nav의 자리 선정 */
+.nav-wrap {
+  position: relative;
+  left: 0;
+  width: 100vw;
+  height: 30%;
+  border: 1px solid #ddd;
+  border-bottom: 1px solid #000;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+/* nav의 너비 및 높이 설정*/
+.nav1 {
+  width: 8%;
+  height: 100%;
+  margin-left: 15%;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  z-index: 1;
+}
+
+.nav1 > li {
+  width: 100%;
+  height: 100%;
+}
+
+.nav1 > li > a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 15px 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.nav1-gnb {
+  position: absolute;
+  top: 100%;
+  left: -0.1%;
+  width: 100vw;
+  background-color: #fff;
+  padding: 0 15%;
+  text-align: left;
+  border-top: 1px solid #8f32d9;
+  border-bottom: 1px solid #8f32d9;
+  line-height: 1.8rem;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.nav1-gnb > li {
+  width: 15%;
+  height: 200px;
+  margin-right: 1%;
+  font-weight: bold;
+}
+
+.nav1-gnb > li:nth-child(5),
+.nav1-gnb > li:nth-child(10) {
+  width: 30%;
+}
+
+.nav1-gnb > li > a {
+  display: block;
+  width: 75%;
+  border-bottom: 2px solid #000;
+  padding: 15px 0;
+}
+
+
+.nav1-sub {
+  width: 100%;
+  height: 100%;
+  font-weight: normal;
+  font-size: 14px;
+  padding: 10px 0;
+}
+
+.nav1-gnb > li:nth-child(5) > .nav1-sub, 
+.nav1-gnb > li:nth-child(10) > .nav1-sub {
+  width: 40%;
+  height: 100%;
+}
+
+.nav2 {
+ width: 62%;
+ height: 100%; 
+}
+
+.nav2 > li {
+  height: 100%;
+  padding: 0 15px;
+  font-weight: bold;
+}
+
+/* 너비 임의 지정 */
+.nav2 > li:nth-child(11),
+.nav2 > li:nth-child(12) {
+  width: 8.7%;
+}
+
+.nav2 > li > a {
+  display: block;
+  padding: 15px 0;
+  width: 100%;
+  height: 100%;
+}
+
+.nav2 > li:hover > a {
+  border-bottom: 3px solid #8f32d9;
+  color: #8f32d9;
+}
+
+.nav2 > li:last-child > a > span {
+  font-size: 10px;
+  color: red;
+}
+
+.nav2 > li:nth-child(11):hover > a,
+.nav2 > li:nth-child(12):hover > a,
+.nav2 > li:nth-child(13):hover > a,
+.nav2 > li:nth-child(14):hover > a {
+  border-bottom: none;
+}
+
+.nav2-gnb {
+  position: absolute;
+  left: 0%;
+  top: 101%;
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  padding: 0 23%;
+  z-index: 10;
+  display: none;
+}
+
+.nav2-gnb > li {
+  font-size: 13px;
+  padding: 0 15px;
+}
+
+.nav2-gnb > li > a {
+  display: block;
+  height: 100%;
+  padding: 14px 0;
+  font-weight: normal;
+}
+
+.nav2-gnb > li:hover > a {
+  border-bottom: 3px solid #8f32d9;
+  color: #8f32d9;
+}
+
+
+/* 서브메뉴 안에 있는 서브메뉴 */
+.nav2-sub {
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 15px 15%;
+  display: none;
+  overflow: hidden;
+}
+
+.nav2-sub4 {
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 15px 15%;
+  display: none;
+  overflow: hidden;
+}
+
+.nav2-sub5 {
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 15px 15%;
+  display: none;
+  overflow: hidden;
+}
+
+/* 각 배열마다 높이지정 */
+.nav2-sub5.sssub3 {
+  height: 10vh;
+}
+
+.nav2-sub.sub2,
+.nav2-sub4.ssub3,
+.nav2-sub4.ssub4,
+.nav2-sub4.ssub6, 
+.nav2-sub4.ssub7 {
+  height: 25vh;
+}
+
+.nav2-sub4.ssub5 {
+  height: 40vh;
+}
+
+.nav2-sub.sub3 {
+  height: 45vh;
+}
+
+.nav2-sub.sub4{
+  height: 35vh;
+}
+
+.nav2-sub.sub1,
+.nav2-sub4.ssub2 {
+  height: 50vh;
+}
+
+.nav2-sub.sub6 {
+  width: 100%;
+  height: 60vh;
+}
+
+.nav2-sub.sub7 {
+  width: 100%;
+  height: 65vh;
+}
+
+
+/* 해외여행 - 서브메뉴 내부를 배열로 나눔. */
+.nav2-sub.sub1 > li,
+.nav2-sub.sub3 > li,
+.nav2-sub.sub4 > li,
+.nav2-sub.sub5 > li, 
+.nav2-sub.sub6 > li {
+  width: 25%;
+  height: 100%;
+  padding: 20px 10px;
+}
+
+.nav2-sub.sub2 > li {
+  width: 33.3%;
+  padding: 20px 10px;
+  height: 100%;
+}
+
+.nav2-sub.sub7 > li {
+  width:20%;
+  height: 100%;
+  padding: 20px 10px;
+}
+
+/* 투어입장권 - 서브메뉴 내부를 배열로 나눔. */
+.nav2-sub4.ssub2 > li,
+.nav2-sub4.ssub4 > li,
+.nav2-sub4.ssub5 > li {
+  width: 25%;
+  height: 100%;
+  padding: 20px 10px;
+}
+
+.nav2-sub4.ssub1 > li,
+.nav2-sub4.ssub3 > li, 
+.nav2-sub4.ssub6 > li {
+  width: 33.3%;
+  height: 100%;
+  padding: 20px 10px;
+}
+
+.nav2-sub4.ssub7 > li {
+  width: 50%;
+  height: 100%;
+  padding: 20px 10px;
+}
+
+/* 제주/국내여행 - 서브메뉴 내부를 배열로 나눔 */
+.nav2-sub5.sssub1 > li {
+  width: 25%;
+  height: 100%;
+  padding: 20px 10px;
+}
+
+.nav2-sub5.sssub3 > li {
+  width: 33.3%;
+  height: 100%;
+  padding: 20px 10px;
+}
+
+/* 해외여행 - 그 배열의 부모 설정 */
+.sub1-1,
+.sub1-2,
+.sub1-3,
+.sub1-4,
+.sub2-1,
+.sub2-2,
+.sub2-3, 
+.sub3-1, 
+.sub3-2, 
+.sub3-3, 
+.sub3-4,
+.sub4-1,
+.sub4-2,
+.sub4-3,
+.sub4-4, 
+.sub5-1, 
+.sub5-2, 
+.sub5-3, 
+.sub5-4, 
+.sub6-1, 
+.sub6-2, 
+.sub6-3, 
+.sub6-4, 
+.sub7-1, 
+.sub7-2, 
+.sub7-3, 
+.sub7-4, 
+.sub7-5 { 
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  line-height: 1.5rem;
+  border-right: 1px solid #ddd;
+}
+
+/* 투어입장권 - 그 배열의 부모 설정 */
+.ssub1-1, 
+.ssub1-2,
+.ssub1-3,  
+.ssub2-1,  
+.ssub2-2,  
+.ssub2-3,  
+.ssub2-4,
+.ssub3-1,  
+.ssub3-2,  
+.ssub3-3,
+.ssub4-1,
+.ssub4-2,
+.ssub4-3,
+.ssub4-4,
+.ssub5-1,
+.ssub5-2,
+.ssub5-3,
+.ssub5-4,
+.ssub6-1,
+.ssub6-2,
+.ssub6-3,
+.ssub7-1,
+.ssub7-2,  
+.ssub7-3 {  
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  line-height: 1.5rem;
+  border-right: 1px solid #ddd;
+}
+
+/* 제주/국내여행 - 그 배열의 부모 설정 */
+.sssub1-1, 
+.sssub1-2, 
+.sssub1-3, 
+.sssub1-4,
+.sssub3-1,
+.sssub3-2,
+.sssub3-3 {  
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  line-height: 1.5rem;
+  border-right: 1px solid #ddd;
+}
+
+/* 끝의 경계선 없앰. */
+.sub1-4,
+.sub2-3,
+.sub3-4,
+.sub4-4,
+.sub5-4,
+.sub6-4,
+.sub7-5 {
+  border-right: none;
+}
+
+.ssub1-3,
+.ssub2-4,
+.ssub3-3,
+.ssub4-4,
+.ssub5-4,
+.ssub6-3,
+.ssub7-2 {
+  border-right: none;
+}
+
+.sssub1-4, 
+.sssub3-3 {
+  border-right: none;
+}
+
+/* 해외여행 - ul마다 패딩값을 주어 일정한 높이만큼 벌어지도록 설정 */
+.sub1-1 > li > ul,
+.sub1-2 > li > ul,
+.sub1-3 > li > ul,
+.sub1-4 > li > ul,
+.sub2-1 > li > ul,
+.sub2-2 > li > ul,
+.sub2-3 > li > ul, 
+.sub3-1 > li > ul, 
+.sub3-2 > li > ul, 
+.sub3-3 > li > ul, 
+.sub3-4 > li > ul, 
+.sub4-1 > li > ul, 
+.sub4-2 > li > ul, 
+.sub4-3 > li > ul, 
+.sub5-1 > li > ul,
+.sub5-2 > li > ul,
+.sub5-3 > li > ul,
+.sub5-4 > li > ul,
+.sub6-1 > li > ul,
+.sub6-2 > li > ul,
+.sub6-3 > li > ul,
+.sub6-4 > li > ul,
+.sub7-1 > li > ul,
+.sub7-2 > li > ul,
+.sub7-3 > li > ul,
+.sub7-4 > li > ul,
+.sub7-5 > li > ul {
+  padding: 10px 0 30px 0;
+}
+
+/* 투어입장권 - ul마다 패딩값을 주어 일정한 높이만큼 벌어지도록 설정 */
+.ssub1-1 > li > ul,
+.ssub1-2 > li > ul,
+.ssub1-3 > li > ul,
+.ssub2-1 > li > ul,
+.ssub2-2 > li > ul,
+.ssub2-3 > li > ul,
+.ssub2-4 > li > ul,
+.ssub3-1 > li > ul,
+.ssub3-2 > li > ul,
+.ssub3-3 > li > ul,
+.ssub4-1 > li > ul,
+.ssub4-2 > li > ul,
+.ssub4-3 > li > ul,
+.ssub4-4 > li > ul,
+.ssub5-1 > li > ul,
+.ssub5-2 > li > ul,
+.ssub5-3 > li > ul,
+.ssub5-4 > li > ul,
+.ssub6-1 > li > ul,
+.ssub6-2 > li > ul,
+.ssub6-3 > li > ul,
+.ssub7-1 > li > ul,
+.ssub7-2 > li > ul{
+  padding: 10px 0 30px 0;
+}
+
+/* 제주/국내여행 - ul마다 패딩값을 주어 일정한 높이만큼 벌어지도록 설정 */
+.ssub1-1 > li > ul,
+.ssub1-2 > li > ul,
+.ssub1-3 > li > ul,
+.ssub1-4 > li > ul,
+.ssub3-1 > li > ul,
+.ssub3-2 > li > ul,
+.ssub3-3 > li > ul {
+  padding: 10px 0 30px 0;
+}
+
+/*해외여행 - 자식요소ul이 없는 경우 부모요소에 패딩값을 주어 일정한 높이만큼 벌어지도록 설정 */
+.sub1-1 > li:nth-child(2),
+.sub1-1 > li:nth-child(3),
+.sub1-4 > li:not(:first-child), 
+.sub2-1 > li,
+.sub3-3 > li:not(:last-child),
+.sub5-4 > li:nth-child(2),
+.sub6-1 > li,
+.sub6-2 > li,
+.sub6-3 > li,
+.sub6-4 > li {
+  padding: 10px 0 30px;
+}
+
+.ssub3-3 > li:first-child,
+.ssub5-4 > li:first-child,
+.ssub6-1 > li:first-child,
+.ssub6-2 > li:first-child,
+.ssub6-3 > li:first-child,
+.ssub6-4 > li:first-child {
+  padding: 0 0 30px;
+}
+
+.sssub1-1 > li, 
+.sssub1-2 > li, 
+.sssub1-3 > li, 
+.sssub1-4 > li, 
+.sssub3-1 > li, 
+.sssub3-2 > li, 
+.sssub3-3 > li {
+  padding: 0 0 30px;
+}
+
+/*해외여행 - 자식요소ul이 없는 경우 부모요소에 패딩값을 주어 일정한 높이만큼 벌어지도록 설정 */
+.ssub1-1 > li,
+.ssub1-2 > li,
+.ssub1-3 > li,
+.ssub2-1 > li,
+.ssub2-2 > li,
+.ssub2-3 > li,
+.ssub2-4 > li,
+.ssub3-1 > li,
+.ssub3-2 > li,
+.ssub3-3 > li {
+  padding: 10px 0 30px;
+}
+
+/*제주/국내여행 - 자식요소ul이 없는 경우 부모요소에 패딩값을 주어 일정한 높이만큼 벌어지도록 설정 */
+.sssub1-1 > li,
+.sssub1-2 > li,
+.sssub1-3 > li,
+.sssub1-4 > li {
+  padding: 10px 0 30px;
+}
+
+/*투어입장권 - 배열 정리 */
+.ssub1-1 > li:first-child,
+.ssub1-2 > li:first-child,
+.ssub1-3 > li:first-child, 
+.ssub2-1 > li:first-child, 
+.ssub2-2 > li:first-child, 
+.ssub2-3 > li:first-child, 
+.ssub2-4 > li:first-child,
+.ssub3-1 > li:first-child,
+.ssub3-2 > li:first-child,
+.ssub3-3 > li:first-child {
+  padding: 0 0 30px;
+}
+
+.sssub1-1 > li:first-child, 
+.sssub1-2 > li:first-child, 
+.sssub1-3 > li:first-child, 
+.sssub1-4 > li:first-child, 
+.sssub3-1 > li:first-child, 
+.sssub3-2 > li:first-child 
+.sssub3-3 > li:first-child { 
+  padding: 0 0 30px;
+}
+
+/* 배열 안에서도 대주제에 호버시 색상변경 */
+.sub1-1 > li:hover > a,
+.sub1-2 > li:hover > a,
+.sub1-3 > li:hover > a,
+.sub1-4 > li:hover > a,
+.sub2-1 > li:hover > a,
+.sub2-2 > li:hover > a,
+.sub2-3 > li:hover > a,
+.sub3-1 > li:hover > a,
+.sub3-2 > li:hover > a,
+.sub3-3 > li:hover > a,
+.sub3-4 > li:hover > a,
+.sub4-1 > li:hover > a,
+.sub4-2 > li:hover > a,
+.sub4-3 > li:hover > a,
+.sub4-4 > li:hover > a,
+.sub5-1 > li:hover > a,
+.sub5-2 > li:hover > a,
+.sub5-3 > li:hover > a,
+.sub5-4 > li:hover > a,
+.sub6-1 > li:hover > a,
+.sub6-2 > li:hover > a,
+.sub6-3 > li:hover > a,
+.sub6-4 > li:hover > a,
+.sub7-1 > li:hover > a,
+.sub7-2 > li:hover > a,
+.sub7-3 > li:hover > a,
+.sub7-4 > li:hover > a,
+.sub7-5 > li:hover > a {
+  color: #8f32d9;
+}
+
+/* 투어입장권 - 배열 안에서도 대주제에 호버시 색상변경 */
+.ssub1-1 > li:hover > a,
+.ssub1-2 > li:hover > a,
+.ssub1-3 > li:hover > a,
+.ssub2-1 > li:hover > a,
+.ssub2-2 > li:hover > a,
+.ssub2-3 > li:hover > a,
+.ssub2-4 > li:hover > a,
+.ssub3-1 > li:hover > a,
+.ssub3-2 > li:hover > a,
+.ssub3-3 > li:hover > a, 
+.ssub4-1 > li:hover > a, 
+.ssub4-2 > li:hover > a, 
+.ssub4-3 > li:hover > a, 
+.ssub4-4 > li:hover > a, 
+.ssub5-1 > li:hover > a, 
+.ssub5-2 > li:hover > a, 
+.ssub5-3 > li:hover > a, 
+.ssub5-4 > li:hover > a, 
+.ssub6-1 > li:hover > a, 
+.ssub6-2 > li:hover > a, 
+.ssub6-3 > li:hover > a, 
+.ssub7-1 > li:hover > a, 
+.ssub7-2 > li:hover > a {
+  color: #8f32d9;
+}
+
+/* 소주제의 폰트 사이즈 */
+.sub1-1 > li > ul, 
+.sub1-2 > li > ul,
+.sub1-3 > li > ul,
+.sub1-4 > li > ul,
+.sub2-1 > li > ul,
+.sub2-2 > li > ul,
+.sub2-3 > li > ul, 
+.sub3-1 > li > ul, 
+.sub3-2 > li > ul, 
+.sub3-3 > li > ul, 
+.sub3-4 > li > ul,
+.sub4-1 > li > ul,
+.sub4-2 > li > ul,
+.sub4-3 > li > ul,
+.sub4-4 > li > ul,
+.sub5-1 > li > ul,
+.sub5-2 > li > ul,
+.sub5-3 > li > ul,
+.sub5-4 > li > ul, 
+.sub6-1 > li > ul, 
+.sub6-2 > li > ul, 
+.sub6-3 > li > ul, 
+.sub6-4 > li > ul,
+.sub7-1 > li > ul,
+.sub7-2 > li > ul,
+.sub7-3 > li > ul,
+.sub7-4 > li > ul,
+.sub7-5 > li > ul {
+  font-size: 12px;
+}
+
+/* 투어입장권-소주제 폰트 사이즈 */
+.ssub1-1 > li > ul,
+.ssub1-2 > li > ul,
+.ssub1-3 > li > ul, 
+.ssub2-1 > li > ul, 
+.ssub2-2 > li > ul, 
+.ssub2-3 > li > ul, 
+.ssub2-4 > li > ul,
+.ssub3-1 > li > ul,
+.ssub3-2 > li > ul,
+.ssub3-3 > li > ul,
+.ssub4-1 > li > ul,
+.ssub4-2 > li > ul,
+.ssub4-3 > li > ul,
+.ssub4-4 > li > ul,
+.ssub5-1 > li > ul,
+.ssub5-2 > li > ul,
+.ssub5-3 > li > ul,
+.ssub5-4 > li > ul,
+.ssub6-1 > li > ul,
+.ssub6-2 > li > ul,
+.ssub6-3 > li > ul,
+.ssub7-1 > li > ul,
+.ssub7-2 > li > ul {
+  font-size: 12px;
+}
+
+/* 소주제의 폰트 컬러 */
+.sub1-1 > li > ul > li > a,
+.sub1-2 > li> ul > li > a,
+.sub1-3 > li> ul > li > a,
+.sub1-4 > li> ul > li > a,
+.sub2-1 > li> ul > li > a,
+.sub2-2 > li> ul > li > a,
+.sub2-3 > li> ul > li > a,
+.sub3-1 > li> ul > li > a,
+.sub3-2 > li> ul > li > a,
+.sub3-3 > li> ul > li > a,
+.sub3-4 > li> ul > li > a, 
+.sub4-1 > li> ul > li > a, 
+.sub4-2 > li> ul > li > a, 
+.sub4-3 > li> ul > li > a, 
+.sub4-4 > li> ul > li > a,
+.sub5-1 > li> ul > li > a,
+.sub5-2 > li> ul > li > a,
+.sub5-3 > li> ul > li > a,
+.sub5-4 > li> ul > li > a,
+.sub6-1 > li> ul > li > a,
+.sub6-2 > li> ul > li > a,
+.sub6-3 > li> ul > li > a,
+.sub6-4 > li> ul > li > a,
+.sub7-1 > li> ul > li > a,
+.sub7-2 > li> ul > li > a,
+.sub7-3 > li> ul > li > a,
+.sub7-4 > li> ul > li > a,
+.sub7-5 > li> ul > li > a {
+  color: #555;
+}
+
+/* 투어입장권- 소주제의 폰트 컬러 */
+.ssub1-1 > li> ul > li > a,
+.ssub1-2 > li> ul > li > a,
+.ssub1-3 > li> ul > li > a,
+.ssub2-1 > li> ul > li > a,
+.ssub2-2 > li> ul > li > a,
+.ssub2-3 > li> ul > li > a,
+.ssub2-4 > li> ul > li > a,
+.ssub3-1 > li> ul > li > a,
+.ssub3-2 > li> ul > li > a,
+.ssub3-3 > li> ul > li > a,
+.ssub4-1 > li> ul > li > a,
+.ssub4-2 > li> ul > li > a,
+.ssub4-3 > li> ul > li > a,
+.ssub4-4 > li> ul > li > a,
+.ssub5-1 > li> ul > li > a,
+.ssub5-2 > li> ul > li > a,
+.ssub5-3 > li> ul > li > a,
+.ssub5-4 > li> ul > li > a,
+.ssub6-1 > li> ul > li > a,
+.ssub6-2 > li> ul > li > a,
+.ssub6-3 > li> ul > li > a,
+.ssub7-1 > li> ul > li > a,
+.ssub7-2 > li> ul > li > a {
+  color: #555;
+}
+
+
+/* 소주제의 호버시 폰트 컬러 */
+.sub1-1 > li > ul > li:hover > a,
+.sub1-2 > li> ul > li:hover > a,
+.sub1-3 > li> ul > li:hover > a,
+.sub1-4 > li> ul > li:hover > a, 
+.sub2-1 > li> ul > li:hover > a, 
+.sub2-2 > li> ul > li:hover > a, 
+.sub2-3 > li> ul > li:hover > a,
+.sub3-1 > li> ul > li:hover > a,
+.sub3-2 > li> ul > li:hover > a,
+.sub3-3 > li> ul > li:hover > a,
+.sub3-4 > li> ul > li:hover > a,
+.sub4-1 > li> ul > li:hover > a,
+.sub4-2 > li> ul > li:hover > a,
+.sub4-3 > li> ul > li:hover > a,
+.sub4-4 > li> ul > li:hover > a,
+.sub5-1 > li> ul > li:hover > a,
+.sub5-2 > li> ul > li:hover > a,
+.sub5-3 > li> ul > li:hover > a,
+.sub5-4 > li> ul > li:hover > a,
+.sub6-1 > li> ul > li:hover > a,
+.sub6-2 > li> ul > li:hover > a,
+.sub6-3 > li> ul > li:hover > a,
+.sub6-4 > li> ul > li:hover > a,
+.sub7-1 > li> ul > li:hover > a,
+.sub7-2 > li> ul > li:hover > a,
+.sub7-3 > li> ul > li:hover > a,
+.sub7-4 > li> ul > li:hover > a,
+.sub7-5 > li> ul > li:hover > a {
+  color: #8f32d9;
+}
+
+/* 투어입장권 */
+.ssub1-1 > li> ul > li:hover > a, 
+.ssub1-2 > li> ul > li:hover > a, 
+.ssub1-3 > li> ul > li:hover > a,
+.ssub2-1 > li> ul > li:hover > a,
+.ssub2-2 > li> ul > li:hover > a,
+.ssub2-3 > li> ul > li:hover > a,
+.ssub2-4 > li> ul > li:hover > a,
+.ssub3-1 > li> ul > li:hover > a,
+.ssub3-2 > li> ul > li:hover > a,
+.ssub3-3 > li> ul > li:hover > a,
+.ssub4-1 > li> ul > li:hover > a,
+.ssub4-2 > li> ul > li:hover > a,
+.ssub4-3 > li> ul > li:hover > a,
+.ssub4-4 > li> ul > li:hover > a,
+.ssub5-1 > li> ul > li:hover > a,
+.ssub5-2 > li> ul > li:hover > a,
+.ssub5-3 > li> ul > li:hover > a,
+.ssub5-4 > li> ul > li:hover > a,
+.ssub6-1 > li> ul > li:hover > a,
+.ssub6-2 > li> ul > li:hover > a,
+.ssub6-3 > li> ul > li:hover > a,
+.ssub7-1 > li> ul > li:hover > a,
+.ssub7-2 > li> ul > li:hover > a {
+  color: #8f32d9;
+}
+
+.contents {
+  position: relative;
+  width: 100%;
+  height: 1100px;
+  overflow: hidden;
+}
+
+/* 배너 이미지 */
+.banner1 {
+  width: 100%;
+  height: 600px;
+}
+
+/* 콘텐츠1 */
+.con1 {
+  width: 100%;
+  height: 350px;
+  padding: 50px 15%;
+}
+
+.con1 > h3 { 
+  width: 12%;
+  font-size: 25px;
+
+}
+
+.con1 > p {
+  width: 88%;
+  padding: 0 0 30px;
+}
+
+.con1 > p > a {
+  display: block;
+  width: 90px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  line-height: 35px;
+  margin: 0 10px;
+  background-color: #666;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.con1 > .estimate {
+  width: 100%;
+  height: 300px;
+}
+
+.con1 > .estimate > li {
+  width: 24%;
+  height: 150px;
+  margin-right: 1%;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+}
+
+.con1 > .estimate > li > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 50px 35px;
+}
+
+.con1 > .estimate > li > a > img {
+  display: block;
+  margin-right: 12px;
+  width: 20%;
+  height: 100%;
+}
+
+.con1 > .estimate > li:first-child > a > .li-ch1,
+.con1 > .estimate > li:nth-child(2) > a > .li-ch2 {
+  width: 75%;
+}
+
+.con1 > .estimate > li:nth-child(1) > a > .li-ch1 > p:nth-child(1),
+.con1 > .estimate > li:nth-child(2) > a > .li-ch2 > p:nth-child(1),
+.con1 > .estimate > li:nth-child(3) > a > .li-ch3 > p:nth-child(1),
+.con1 > .estimate > li:nth-child(4) > a > .li-ch4 > p:nth-child(1)  {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: left;
+}
+
+.con1 > .estimate > li:nth-child(2) > a > .li-ch2 > p:nth-child(1) > span {
+  font-weight: bold;
+  font-size: 14px;
+  text-align: left;
+}
+
+.con1 > .estimate > li > a > .li-ch1 > p:nth-child(2),
+.con1 > .estimate > li > a > .li-ch2 > p:nth-child(2),
+.con1 > .estimate > li > a > .li-ch3 > p:nth-child(2),
+.con1 > .estimate > li > a > .li-ch4 > p:nth-child(2) {
+  font-size: 14px;
+  color: #666;
+  text-align: left;
+}
+
+.con2 {
+  width: 100%;
+  height: 150px;
+  padding: 0 15%;
+}
+
+.con2 > .banner2 {
+  width: 100%;
+  height: 100%;
+}
+
+.con2 > .banner2 > img {
+  width: 100%;
+  height: 100%;
+}
+
+/* footer */
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 450px;
+  background-color: #fff;
+}
+
+footer > div:nth-child(1),
+footer > div:nth-child(2) {
+  width: 100%;
+  height: 50px;
+  padding: 10px 15%;
+  line-height: 26px;
+}
+
+/* fo2 - 공지사항 및 sms */
+footer > div:nth-child(2) {
+border: 1px solid #ddd;
+}
+
+/* fo2 - 공지*/
+footer > div:nth-child(2) > div:nth-child(1) {
+  width: 5%;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+footer > div:nth-child(2) > div:nth-child(2) {
+  width: 40%;
+  text-align: left;
+  font-size: 14px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+footer > div:nth-child(2) > div:nth-child(2) > div > a {
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/* fo2 - sms */
+footer > div:nth-child(2) > div:nth-child(3) {
+  width: 5%;
+  text-align: left;
+  font-size: 12px;
+}
+
+footer > div:nth-child(2) > div:nth-child(3) > a {
+  color: #666;
+}
+
+footer > div:nth-child(2) > div:nth-child(4) {
+  width: 17%;
+  text-align: left;
+  font-size: 12px;
+}
+
+footer > div:nth-child(2) > div:nth-child(4) > img {
+  height: 100%;
+  margin-right: 3%;
+}
+
+/* fo3 */
+footer > div:nth-child(3) {
+  width: 100%;
+  height: 250px;
+  padding: 20px 15%;
+  font-size: 12px;
+}
+
+
+/* fo3 - li:left */
+footer > div:nth-child(3) > ul > li:first-child {
+  width: 80%;
+  height: 100%;
+}
+
+footer > div:nth-child(3) > ul > li:first-child > .rule  {
+  width: 100%;
+  height: 30px;
+  font-weight: bold;
+}
+
+footer > div:nth-child(3) > ul > li:first-child > ul:not(:nth-child(1)) > li {
+  margin: 5px 0 ;
+  padding: 0 10px;
+  border-right: 1px solid #ddd;
+}
+
+footer > div:nth-child(3) > ul > li:first-child > ul:not(:nth-child(1)) > li:last-child {
+  border-right: none;
+}
+
+footer > div:nth-child(3) > ul > li:first-child > ul:nth-child(6) > li:first-child {
+  border-right: none;
+}
+
+footer > div:nth-child(3) > ul > li:first-child > .rule > li > a  {
+  padding: 0 15px;
+  border-right: 1px solid #ddd; }
+
+ footer > div:nth-child(3) > ul > li:first-child > .rule > li:last-child > a  {
+    border-right: none; }
+
+ footer > div:nth-child(3) > ul > li ul:nth-child(6) > li {
+  font-weight: bold;
+  color: #8f32d9;}
+  
+
+/* fo3 - li:right */
+/* 하나투어 구매안전 서비스 */
+footer > div:nth-child(3) > ul > li:nth-child(3) {
+  width: 20%;
+  height: 100%;
+}
+
+footer > div:nth-child(4) {
+  width: 100%;
+  height: 100px;
+  background-color: #ddd;
+  padding: 0 15%;
+}
+
+footer > div:nth-child(4) > div:first-child {
+  width: 70%;
+  height: 100px;
+  background-color: #ddd;
+
+}
+
+footer > div:nth-child(4) > div:nth-child(2) {
+  width: 30%;
+  height: 100px;
+  background-color: #ddd;
+}
+
+.fo4-1.fl.slick-initialized.slick-slider > .slick-list.draggable > .slick-track >.slick-slide.slick-current.slick-active > img {
+  width: 50px;
+  height: 50px;
+  margin: 25px 0;
+}
+
+
+.fo4-1.fl.slick-initialized.slick-slider > .slick-list.draggable > .slick-track >.slick-slide.slick-active > img {
+  width: 50px;
+  height: 50px;
+  margin: 25px 0;
+}
+
+.fo4-1.fl.slick-initialized.slick-slider > .slick-list.draggable > .slick-track > .slick-slide > img {
+  width: 50px;
+  height: 50px;
+  margin: 25px 0;
+}
+
+
+.fo4-1.fl.slick-initialized.slick-slider > .slick-list.draggable > .slick-track > .slick-slide.slick-cloned > img {
+  width: 50px;
+  height: 50px;
+  margin: 25px 0;
+}
+
+.fo4-1.fl.slick-initialized.slick-slider > .slick-list.draggable > .slick-track >.slick-slide.slick-current.slick-active > span {
+  width: 150px;
+  height: 50px;
+  margin: 25px 0;
+  font-size: 10px;
+}
+
+.fo4-1.fl.slick-initialized.slick-slider > .slick-list.draggable > .slick-track >.slick-slide.slick-active > span {
+  width: 150px;
+  height: 50px;
+  margin: 25px 0;
+  font-size: 10px;
+}
+
+.fo4-1.fl.slick-initialized.slick-slider > .slick-list.draggable > .slick-track > .slick-slide > span {
+   width: 150px;
+   height: 50px;
+   margin: 25px 0;
+   font-size: 10px;
+}
+
+.fo4-1.fl.slick-initialized.slick-slider > .slick-list.draggable > .slick-track > .slick-slide.slick-cloned > span {
+  width: 150px;
+  height: 50px;
+  margin: 25px 0;
+  font-size: 10px;
+}
+
+.fo4.clear {
+  position: relative;
+  left: 0;
+}
+
+.fo4-1.fl.slick-initialized.slick-slider >
+.slick-prev.slick-arrow {
+  position: absolute;
+  left: 100%;
+  top: 20%;
+  width: 20px;
+  height: 20px;
+  background-color: #eee;
+  border-radius: 0;
+}
+
+.fo4-1.fl.slick-initialized.slick-slider >
+.slick-next.slick-arrow {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #eee;
+  border-radius: 0;
+}
+
+/* fo4의 고정스티커 */
+.fo4-2.fl > img {
+  width: 50px;
+  height: 50px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+
+/* 사이드바 */
+.sidebar-wrap {
+  position: fixed;
+  right: 0.001%;
+  top: 18.9%;
+  width: 130px;
+  height: 310px;
+  font-size: 14px;
+  text-align: center;
+  z-index: 0;
+}
+
+.side1 {
+  border: 1px solid #000;
+  width: 100%;
+  height: 130px;
+  padding: 30px 0;
+  background-color: #fff;
+  font-weight: bold;
+}
+
+.side1 > a > img {
+  width: 30%;
+  line-height: 0;
+}
+
+.side2 {
+  width: 100%;
+  height: 50px;
+  background-color: #ddd;
+  line-height: 45px;
+}
+
+.side2-con {
+  width: 100%;
+  height: 100px;
+  background-color: #eee;
+  display: none;
+  padding: 30px 20px;
+  color: #888;
+  font-size: 12px;
+}
+
+.top {
+  width: 100%;
+  height: 30px;
+  background-color: #ddd;
+  line-height: 25px;
+}
+
+.side2,
+.side2-con,
+.top{
+  border: 1px solid #000;
+  border-top: none;
+}
+
+.side2-con {
+  border-bottom-color: #ccc;
+}
+
+.side2 {
+  border-bottom-color: #ccc;
+}
+
+.side2,
+.top {
+  cursor: pointer;
+}

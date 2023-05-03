@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>하나투어</title>
+
+  <!-- 내가 쓴 것 -->
+  <link rel="stylesheet" href="css/cmtrip.css" />
+
+  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+
+  <!-- 폰트어썸 -->
+  <!--<script src="https://kit.fontawesome.com/4bdc6f6908.js" crossorigin="anonymous"></script> -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' integrity='sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==' crossorigin='anonymous'/>
+
+  <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <!-- 내가 쓴 것 -->
+  <script src="js/cmtrip.js" defer></script>
+</head>
+
+<body>
+  <!-- 전체영역 -->
+  <div class="wrap">
+    <!-- 헤더 -->
+    <header>
+      <!-- 상위헤더 -->
+      <div class="hd1 clear">
+        <!-- 로고 -->
+        <div class="logo fl"><a href="index.html">
+          <img src="image/logo.before.png" alt="" /></a>
+        </div>
+
+
+        <!-- 검색창 -->
+        <div class="search fl">
+          <input type="text" placeholder="검색어를 입력하세요." />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <div class="hot-wrap fl">
+          <!-- 1.일본 -->
+          <div><a href="#none">
+            <span>Hot</span>
+            <span>일본</span>
+          </a></div>
+          
+          <!-- 2.다낭 -->
+          <div><a href="#none">
+            <span>Hot</span>
+            <span>다낭</span>
+          </a></div>
+
+          <!-- 3.괌 -->
+          <div><a href="#none">
+            <span>Hot</span>
+            <span>괌</span>
+          </a></div>
+
+          <!-- 4.대만 -->
+          <div><a href="#none">
+            <span>Hot</span>
+            <span>대만</span>
+          </a></div>
+
+          <div><a href="#none">
+                <span>Hot</span>
+                <span>스페인</span>
+              </a></div>
+
+          <div>
+            <a href="#none">
+              <span>Hot</span>
+              <span>싱가포르</span>
+            </a>
+          </div>
+
+          <div><a href="#none">
+                <span>Hot</span>
+                <span>보라카이</span>
+              </a>
+            </div>
+
+          <div><a href="#none">
+                <span>Hot</span>
+                <span>나트랑</span>
+              </a>
+            </div>
+
+          <div>
+            <a href="#none">
+              <span>Hot</span>
+              <span>오사카</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- 유틸영역 -->
+        <div class="spot-wrap fr">
+          <!-- spot1 = 로그인, 회원가입, 고객센터 -->
+          <ul class="spot1">
+            <li class="fl"><a href="./login.html"><span>●</span> 로그인</a></li>
+            <li class="fl"><a href="#none">회원가입</a></li>
+            <li class="fl"><a href="#none">고객센터</a></li>
+          </ul>
+
+          <!-- spot2 = 마이메뉴, 예약내역, 찜 -->
+          <ul class="spot2">
+            <li class="fl">
+              <a href="#noen">
+                <i class="fa-regular fa-circle-user">
+                  <p>마이메뉴</p>
+                </i>
+              </a>
+            </li>
+            <li class="fl">
+              <a href="#noen">
+                <i class="fa-regular fa-file-lines">
+                  <p>예약내역</p>
+                </i>
+              </a>
+            </li>
+            <li class="fl">
+              <a href="#noen">
+                <i class="fa-regular fa-heart">
+                  <p>찜</p>
+                </i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 하위헤더/ 내비게이션 -->
+      <div class="nav-wrap clear">
+        <!-- 전체 메뉴 button -->
+        <ul class="nav1 fl">
+          <!-- <li class="here"><a href="#none"> -->
+          <li>
+            <a href="#none">
+              <i class="fa-solid fa-bars"></i>
+              &nbsp;전체메뉴</a>
+            <ul class="nav1-gnb">
+              <!--1. 해외여행 nav-->
+              <li class="fl">
+                <a href="#none">해외여행</a>
+                <ul class="nav1-sub">
+                  <li><a href="#">해외여행홈</a></li>
+                </ul>
+              </li>
+
+              <!-- 2. 항공 nav -->
+              <li class="fl">
+                <a href="#none">항공</a>
+                <ul class="nav1-sub">
+                  <li><a href="#none">항공예약</a></li>
+                </ul>
+              </li>
+
+              <!-- 3. 호텔 nav -->
+              <li class="fl">
+                <a href="#none">호텔</a>
+                <ul class="nav1-sub">
+                  <li><a href="http://naver.com">해외호텔</a></li>
+                  <li><a href="#none">국내숙박</a></li>
+                </ul>
+              </li>
+
+              <!-- 4.제주/국내숙박 -->
+              <li class="fl">
+                <a href="#none">제주/국내여행</a>
+                <ul class="nav1-sub">
+                  <li><a href="#none">제주/국내여행</a></li>
+                  <li><a href="#none">제주렌터카</a></li>
+                  <li><a href="#none">국내골프</a></li>
+                </ul>
+              </li>
+
+              <!-- 5. 연계서비스 nav -->
+              <li class="fl">
+                <a href="#none">연계서비스</a>
+                <ul class="nav1-sub fl">
+                  <li><a href="#none">하나투어상품권</a></li>
+                  <li><a href="#none">포켓와이파이</a></li>
+                  <li><a href="#none">For Foreign Tranvellers</a></li>
+                </ul>
+
+                <ul class="nav1-sub fl">
+                  <li><a href="#none">기업출장/단체</a></li>
+                  <li><a href="#none">하나투어 기프트 카드</a></li>
+                  <li><a href="#none">여행자 보험</a></li>
+                </ul>
+              </li>
+
+              <!-- 6. 여백 nav -->
+              <li class="fl">
+                <!-- 여백생성 -->
+              </li>
+
+              <!--7. 테마여행 nav-->
+              <li class="fl">
+                <a href="#none">테마여행</a>
+                <ul class="nav1-sub">
+                  <li><a href="#none">허니문</a></li>
+                  <li><a href="#none">해외골프</a></li>
+                  <li><a href="#none">제우스</a></li>
+                  <li><a href="#none">MICE</a></li>
+                </ul>
+              </li>
+
+              <!-- 8. 투어/입장권 nav -->
+              <li class="fl">
+                <a href="#none">투어/입장권</a>
+                <ul class="nav1-sub">
+                  <li><a href="#none">투어/입장권 홈</a></li>
+                  <li><a href="#none">전체 도시</a></li>
+                </ul>
+              </li>
+
+              <!-- 9. 혜택/이벤트 nav -->
+              <li class="fl">
+                <a href="#none">헤택/이벤트</a>
+                <ul class="nav1-sub">
+                  <li><a href="#none">이벤트</a></li>
+                  <li><a href="#none">할인/혜택</a></li>
+                  <li><a href="#none">여행기획전</a></li>
+                </ul>
+              </li>
+
+              <!-- 10. 하나투어 셀렉션 -->
+              <li class="fl">
+                <a href="#none">하나투어 셀렉션</a>
+                <ul class="nav1-sub fl">
+                  <li><a href="#none">하나LIVE</a></li>
+                  <li><a href="#none">마일리지 클럽</a></li>
+                  <li><a href="#none">하나Original</a></li>
+                </ul>
+
+                <ul class="nav1-sub fl">
+                  <li><a href="#none">하나팩2.0(개런티)</a></li>
+                  <li><a href="#none">SAFETY&JOY</a></li>
+                  <li><a href="#none">우리끼리</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- 기타 메뉴 -->
+        <ul class="nav2 fl">
+          <!-- 1.해외여행 -->
+          <li class="fl"><a href="#none">해외여행</a>
+            <!-- 1-1.해외여행 서브메뉴 -->
+            <ul class="nav2-gnb clear">
+              <li class="fl"><a href="#none">해외여행 홈</a></li>
+              <li class="fl"><a href="#none">동남아/대만/서남아</a>
+                <ul class="nav2-sub sub1 clear">
+                  <!-- 동남아/대만/서남아 -->
+                  <li class="fl">
+                    <ul class="sub1-1">
+                      <li><a href="#none">태국</a>
+                        <ul>
+                          <li><a href="#none">방콕</a></li>
+                          <li><a href="#none">파파야</a></li>
+                          <li><a href="#none">푸껫/끄라비</a></li>
+                          <li><a href="#none">치앙마이</a></li>
+                          <li><a href="#none">아유타야</a></li>
+                          <li><a href="#none">카오야이</a></li>
+                          <li><a href="#none">칸차나부리</a></li>
+                          <li><a href="#none">코사무이</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#none">싱가포르</a></li>
+                      <li><a href="#none">
+                          몰디브
+                        </a></li>
+                    </ul>
+                  </li>
+
+                  <li class="fl">
+                    <ul class="sub1-2">
+                      <li><a href="#none">필리핀</a>
+                        <ul>
+                          <li><a href="#none">보라카이</a></li>
+                          <li><a href="#none">세부</a></li>
+                          <li><a href="#none">보흘</a></li>
+                          <li><a href="#none">마닐라</a></li>
+                          <li><a href="#none">클락</a></li>
+                        </ul>
+                      </li>
+
+                      <li><a href="#none">베트남</a>
+                        <ul>
+                          <li><a href="#none">다낭</a></li>
+                          <li><a href="#none">나트랑</a></li>
+                          <li><a href="#none">푸꾸옥</a></li>
+                          <li><a href="#none">하릉베이</a></li>
+                          <li><a href="#none">하노이</a></li>
+                          <li><a href="#none">사파</a></li>
+                          <li><a href="#none">호치민/판티엣(무이네)</a></li>
+                          <li><a href="#none">달랏</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+
+                  <li class="fl">
+                    <ul class="sub1-3">
+                      <!-- 첫번째 칸 -->
+                      <li><a href="#none">캄보디아</a>
+                        <ul>
+                          <li><a href="#none">씨엠립(앙코르왓)</a></li>
+                        </ul>
+                      </li>
+
+                      <!-- 2번째 칸 -->
+                      <li><a href="#none">말레이시아</a>
+                        <ul>
+                          <li><a href="#none">코타키나발루</a></li>
+                          <li><a href="#none">쿠알라룸프르</a></li>
+                        </ul>
+                      </li>
+
+                      <!-- 3번째 칸 -->
+                      <li><a href="#none">인도네시아</a>
+                        <ul>
+                          <li><a href="#none">발리</a></li>
+                        </ul>
+                      </li>
+
+                      <!-- 4번째 칸 -->
+                      <li><a href="#none">라오스</a>
+                        <ul>
+                          <li><a href="#none">방비엥</a></li>
+                          <li><a href="#none">루앙프라방</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="fl">
+                    <ul class="sub1-4">
+                      <li><a href="#none">대만</a>
+                        <ul>
+                          <li><a href="#none">타오베이</a></li>
+                          <li><a href="#none">가오슝</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#none">인도</a></li>
+                      <li><a href="#none">네팔</a></li>
+                      <li><a href="#none">브루나이</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="fl"><a href="#none">괌/사이판/호주/뉴질랜드</a>
+                <ul class="nav2-sub sub2 clear">
+                  <li class="fl">
+                    <ul class="sub2-1">
+                      <li><a href="#none">괌</a></li>
+                      <li><a href="#none">사이판</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="fl">
+                    <ul class="sub2-2">
+                      <li><a href="#none">호주</a>
+                        <ul>
+                          <li><a href="#none">시드니</a></li>
+                          <li><a href="#none">멜버른</a></li>
+                          <li><a href="#none">골드코스트</a></li>
+                          <li><a href="#none">브리즈번</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="fl">
+                    <ul class="sub2-3">
+                      <li><a href="#none">뉴질랜드</a>
+                        <ul>
+                          <li><a href="#none">오클랜드</a></li>
+                          <li><a href="#none">로토루아</a></li>
+                          <li><a href="#none">크라이스트처치</a></li>
+                          <li><a href="#none">퀸즈타운</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="fl"><a href="#none">유럽/아프리카</a>
+                <ul class="nav2-sub sub3 clear">
+                  <li class="fl">
+                    <ul class="sub3-1">
+                      <li><a href="#none">서유럽</a>
+                        <ul>
+                          <li><a href="#none">영국</a></li>
+                          <li><a href="#none">스위스</a></li>
+                          <li><a href="#none">이탈리아</a></li>
+                          <li><a href="#none">프랑스</a></li>
+                          <li><a href="#none">남프랑스</a></li>
+                          <li><a href="#none">독일</a></li>
+                          <li><a href="#none">아일랜드</a></li>
+                          <li><a href="#none">네덜란드</a></li>
+                          <li><a href="#none">벨기에</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="fl">
+                    <ul class="sub3-2">
+                      <li><a href="#none">동유럽</a>
+                        <ul>
+                          <li><a href="#none">오스트리아</a></li>
+                          <li><a href="#none">체코</a></li>
+                          <li><a href="#none">헝가리</a></li>
+                        </ul>
+                      </li>
+
+                      <li><a href="#none">발칸</a>
+                        <ul>
+                          <li><a href="#none">크로아티아</a></li>
+                          <li><a href="#none">슬로베니아</a></li>
+                        </ul>
+                      </li>
+
+                      <li><a href="#none">스페인/포르투칼</a>
+                        <ul>
+                          <li><a href="#none">스페인</a></li>
+                          <li><a href="#none">포르투갈</a></li>
+                          <li><a href="#none">모로코</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="fl">
+                    <ul class="sub3-3">
+                      <li><a href="#none">튀르키에(터키)</a></li>
+                      <li><a href="#none">그리스/이집트</a></li>
+                      <li><a href="#none">코카서스</a></li>
+                      <li><a href="#none">중동</a>
+                        <ul>
+                          <li><a href="#none">두바이</a></li>
+                          <li><a href="#none">이스라엘</a></li>
+                          <li><a href="#none">요르단</a></li>
+                          <li><a href="#none">사우디아라비아</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="fl">
+                    <ul class="sub3-4">
+                      <li><a href="#none">북유럽</a>
+                        <ul>
+                          <li><a href="#none">노르웨이</a></li>
+                          <li><a href="#none">핀란드</a></li>
+                          <li><a href="#none">덴마크</a></li>
+                          <li><a href="#none">스웨덴</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#none">아프리카</a>
+                        <ul>
+                          <li><a href="#none">케냐</a></li>
+                          <li><a href="#none">남아공</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                </ul>
+              </li>
+
+              <li class="fl"><a href="#none">알래스카/미주/하와이</a>
+                <ul class="nav2-sub sub4 clear">
+                  <li class="fl">
+                    <ul class="sub4-1">
+                      <li><a href="#none">하와이</a>
+                        <ul>
+                          <li><a href="#none">호놀룰루</a></li>
+                          <li><a href="#none">마우이</a></li>
+                          <li><a href="#none">빅 아일랜드</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="fl">
+                    <ul class="sub4-2">
+                      <li><a href="#none">알래스카</a>
+                        <ul>
+                          <li><a href="#none">앵커리지</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#none">미국서부</a>
+                        <ul>
+                          <li><a href="#none">로스엔젤레스</a></li>
+                          <li><a href="#none">샌프란시스코</a></li>
+                          <li><a href="#none">라스베이거스</a></li>
+                          <li><a href="#none">시애틀</a></li>
+                          <li><a href="#none">그랜드캐년</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="fl">
+                    <ul class="sub4-3">
+                      <li><a href="#none">미국동부</a>
+                        <ul>
+                          <li><a href="#none">뉴욕</a></li>
+                          <li><a href="#none">워싱턴(DC)</a></li>
+                          <li><a href="#none">보스톤</a></li>
+                          <li><a href="#none">필라델피아</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="fl">
+                    <ul class="sub4-4">
+                      <li><a href="#none">캐나다</a>
+                        <ul>
+                          <li><a href="#none">밴쿠버</a></li>
+                          <li><a href="#none">밴프(로키)</a></li>
+                          <li><a href="#none">나이아가라</a></li>
+                          <li><a href="#none">토론토</a></li>
+                          <li><a href="#none">퀘백</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#none">중남미</a>
+                        <ul>
+                          <li><a href="#none">칸쿤</a></li>
+                          <li><a href="#none">남미(브라질,칠레,아르헨티나)</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                </ul>
+              </li>
+
+              <li class="fl"><a href="#none">일본</a>
+                <ul class="nav2-sub sub5">
+                  <li class="fl">
+                    <ul class="sub5-1">
+                      <li><a href="#none">간토(관동)</a>
+                        <ul>
+                          <li><a href="#none">도쿄</a></li>
+                          <li><a href="#none">시즈오카</a></li>
+                          <li><a href="#none">하코네/후지산</a></li>
+                        </ul>
+                      </li>
+
+                      <li><a href="#none">간사이(관서)</a>
+                        <ul>
+                          <li><a href="#none">오사카</a></li>
+                          <li><a href="#none">교토</a></li>
+                          <li><a href="#none">고베</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="fl">
+                    <ul class="sub5-2">
+                      <li><a href="#none">규수</a>
+                        <ul>
+                          <li><a href="#none">후쿠오타</a></li>
+                          <li><a href="#none">벳부/유후인</a></li>
+                          <li><a href="#none">가고시마</a></li>
+                          <li><a href="#none">나가사키</a></li>
+                        </ul>
+                      </li>
+
+                      <li><a href="#none">훗카이도</a>
+                        <ul>
+                          <li><a href="#none">삿포로</a></li>
+                          <li><a href="#none">후라노/비에이</a></li>
+                          <li><a href="#none">아사히카와</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="fl">
+                    <ul class="sub5-3">
+                      <li><a href="#none">시코쿠</a>
+                        <ul>
+                          <li><a href="#none">다카마츠/나오시마</a></li>
+                          <li><a href="#none">마츠야마</a></li>
+                        </ul>
+                      </li>
+
+                      <li><a href="#none">중부/호쿠리쿠</a>
+                        <ul>
+                          <li><a href="#none">도야마/알펜루트</a></li>
+                          <li><a href="#none">나고야</a></li>
+                          <li><a href="#none">다카야마</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="fl">
+                    <ul class="sub5-4">
+                      <li><a href="#none">오키나와</a></li>
+                      <li><a href="#none">대마도</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="fl"><a href="#none">중국/홍콩/몽골/중앙아시아</a>
+                <ul class="nav2-sub sub6 clear">
+                  <li class="fl">
+                    <ul class="sub6-1">
+                      <li><a href="#none">몽골(울란바토르)</a></li>
+                      <li><a href="#none">홍콩</a></li>
+                      <li><a href="#none">마카오</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="fl">
+                    <ul class="sub6-2">
+                      <li><a href="#none">우즈베키스탄(타슈켄트)</a></li>
+                      <li><a href="#none">카자흐스탄(알마티)</a></li>
+                      <li><a href="#none">키르기스스탄(비슈케크)</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="fl">
+                    <ul class="sub6-3">
+                      <li><a href="#none">장가계</a></li>
+                      <li><a href="#none">백두산</a></li>
+                      <li><a href="#none">상해</a></li>
+                      <li><a href="#none">북경</a></li>
+                      <li><a href="#none">사천성(성도/구채구)</a></li>
+                      <li><a href="#none">황산</a></li>
+                      <li><a href="#none">하얼빈</a></li>
+                      <li><a href="#none">서안</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="fl">
+                    <ul class="sub6-4">
+                      <li><a href="#none">태항산</a></li>
+                      <li><a href="#none">청도</a></li>
+                    </ul>
+                  </li>
+
+                </ul>
+              </li>
+
+              <li class="fl"><a href="#none">지방출발</a>
+                <ul class="nav2-sub sub7 clear">
+                  <li class="fl">
+                    <ul class="sub7-1">
+                      <li><a href="#none">부산>동남아시아</a>
+                        <ul>
+                          <li><a href="#none">방콕</a></li>
+                          <li><a href="#none">파타야</a></li>
+                          <li><a href="#none">마닐라</a></li>
+                          <li><a href="#none">세부</a></li>
+                          <li><a href="#none">보라카이</a></li>
+                          <li><a href="#none">클락</a></li>
+                          <li><a href="#none">다낭</a></li>
+                          <li><a href="#none">나트랑</a></li>
+                          <li><a href="#none">하노이</a></li>
+                          <li><a href="#none">호치민/판티엣</a></li>
+                          <li><a href="#none">씨엠립(앙코르왓)</a></li>
+                          <li><a href="#none">싱가포르</a></li>
+                          <li><a href="#none">타이베이</a></li>
+                          <li><a href="#none">가오슝</a></li>
+                          <li><a href="#none">코타키나발루</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="fl">
+                    <ul class="sub7-2">
+                      <li><a href="#none">부산>일본</a>
+                        <ul>
+                          <li><a href="#none">오사카</a></li>
+                          <li><a href="#none">교토</a></li>
+                          <li><a href="#none">후쿠오카</a></li>
+                          <li><a href="#none">벳부/유후인</a></li>
+                          <li><a href="#none">나가사키</a></li>
+                          <li><a href="#none">도쿄</a></li>
+                          <li><a href="#none">도야마/알펜루트</a></li>
+                          <li><a href="#none">삿포로</a></li>
+                        </ul>
+                      </li>
+
+                      <li><a href="#none">부산>일본[선박]</a>
+                        <ul>
+                          <li><a href="#none">대마도</a></li>
+                          <li><a href="#none">후쿠오카</a></li>
+                          <li><a href="#none">시모노세키</a></li>
+                          <li><a href="#none">오사카</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="fl">
+                    <ul class="sub7-3">
+                      <li><a href="#none">부산>중국/홍콩/몽골</a>
+                        <ul>
+                          <li><a href="#none">몽골(울란바토르)</a></li>
+                          <li><a href="#none">장가계</a></li>
+                          <li><a href="#none">백두산</a></li>
+                          <li><a href="#none">서안</a></li>
+                          <li><a href="#none">청도</a></li>
+                          <li><a href="#none">홍콩</a></li>
+                          <li><a href="#none">북경</a></li>
+                          <li><a href="#none">태항산</a></li>
+                        </ul>
+                      </li>
+
+                      <li><a href="#none">부산>유럽</a>
+                        <ul>
+                          <li><a href="#none">스페인</a></li>
+                          <li><a href="#none">서유럽</a></li>
+                          <li><a href="#none">발칸</a></li>
+                          <li><a href="#none">동유럽</a></li>
+                          <li><a href="#none">튀르키예(터키)</a></li>
+                        </ul>
+                      </li>
+
+                      <li><a href="#none">부산>남태평양</a>
+                        <ul>
+                          <li><a href="#none">괌</a></li>
+                          <li><a href="#none">호주/뉴질랜드</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="fl">
+                    <ul class="sub7-4">
+                      <li><a href="#none">대구>동남아시아</a>
+                        <ul>
+                          <li><a href="#none">방콕</a></li>
+                          <li><a href="#none">파타야</a></li>
+                          <li><a href="#none">다낭</a></li>
+                          <li><a href="#none">나트랑</a></li>
+                          <li><a href="#none">대만</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#none">대구>일본</a>
+                        <ul>
+                          <li><a href="#none">오사카</a></li>
+                          <li><a href="#none">후쿠오카</a></li>
+                          <li><a href="#none">훗카이도</a></li>
+                          <li><a href="#none">도쿄</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#none">무안>동남아시아</a>
+                        <ul>
+                          <li><a href="#none">나트랑</a></li>
+                          <li><a href="#none">다낭</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="fl">
+                    <ul class="sub7-5">
+                      <li><a href="#none">청주>동남아시아</a>
+                        <ul>
+                          <li><a href="#none">다낭</a></li>
+                          <li><a href="#none">방콕</a></li>
+                        </ul>
+                      </li>
+
+                      <li><a href="#none">청주>일본</a>
+                        <ul>
+                          <li><a href="#none">오사카</a></li>
+                        </ul>
+                      </li>
+
+                      <li><a href="#none">제주>동남아시아</a>
+                        <ul>
+                          <li><a href="#none">방콕</a></li>
+                          <li><a href="#none">대만</a></li>
+                        </ul>
+                      </li>
+
+                      <li><a href="#none">제주>일본</a>
+                        <ul>
+                          <li><a href="#none">일본</a></li>
+                        </ul>
+                      </li>
+
+                      <li><a href="#none">양양>동남아시아</a>
+                        <ul>
+                          <li><a href="#none">하노이</a></li>
+                          <li><a href="#none">호치민</a></li>
+                          <li><a href="#none">클락</a></li>
+                          <li><a href="#none">대만</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="fl"><a href="#none">항공</a></li>
+
+          <li class="fl"><a href="#none">호텔</a>
+            <ul class="nav2-gnb">
+              <li class="fl"><a href="#none">해외호텔</a></li>
+              <li class="fl"><a href="#none">국내숙박</a></li>
+            </ul>
+          </li>
+
+          <li class="fl"><a href="#none">투어/입장권</a>
+            <ul class="nav2-gnb clear">
+              <li class="fl"><a href="#none">투어/입장권 홈</a></li>
+              <li class="fl"><a href="#none">국내</a>
+                <ul class="nav2-sub4 ssub1 clear">
+                  <li class="fl">
+                    <ul class="ssub1-1">
+                      <li><a href="#none">제주시</a></li>
+                      <li><a href="#none">서울</a></li>
+                      <li><a href="#none">경기</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="fl">
+                    <ul class="ssub1-2">
+                      <li><a href="#none">강원</a></li>
+                      <li><a href="#none">부산/경남</a></li>
+                      <li><a href="#none">대구/경북</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="fl">
+                    <ul class="ssub1-3">
+                      <li><a href="#none">대전/충청</a></li>
+                      <li><a href="#none">광주/전남</a></li>
+                      <li><a href="#none">전북</a></li>
+                    </ul>
+                  </li>
+
+                </ul>
+              </li>
+
+              <li class="fl"><a href="#none">동남아/대만</a>
+                <ul class="nav2-sub4 ssub2 clear">
+                  <li class="fl">
+                    <ul class="ssub2-1">
+                      <li><a href="#none">태국</a>
+                        <ul>
+                          <li><a href="#none">방콕</a></li>
+                          <li><a href="#none">파타야</a></li>
+                          <li><a href="#none">푸켓</a></li>
+                          <li><a href="#none">치앙마이</a></li>
+                        </ul>
+                      </li>
+
+                      <li><a href="#none">싱가포르</a></li>
+                      <li><a href="#none">인도네시아</a>
+                        <ul>
+                          <li><a href="#none">발리</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="fl">
+                    <ul class="ssub2-2">
+                      <li><a href="#none">베트남</a>
+                        <ul>
+                          <li><a href="#none">나트랑</a></li>
+                          <li><a href="#none">다낭</a></li>
+                          <li><a href="#none">하노이</a></li>
+                          <li><a href="#none">푸꾸옥</a></li>
+                        </ul>
+                      </li>
+
+                      <li><a href="#none">필리핀</a>
+                        <ul>
+                          <li><a href="#none">보라카이</a></li>
+                          <li><a href="#none">세부</a></li>
+                          <li><a href="#none">마닐라</a></li>
+                          <li><a href="#none">클락</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="fl">
+                    <ul class="ssub2-3">
+                      <li><a href="#none">말레이시아</a>
+                        <ul>
+                          <li><a href="#none">코타키나발루</a></li>
+                          <li><a href="#none">쿠알라룸푸르</a></li>
+                        </ul>
+                      </li>
+
+                      <li><a href="#none">라오스</a>
+                        <ul>
+                          <li><a href="#none">비엔티앙</a></li>
+                          <li><a href="#none">방비엥</a></li>
+                          <li><a href="#none">루앙프라방</a></li>
+                        </ul>
+                      </li>
+
+                      <li><a href="#none">캄보디아</a>
+                        <ul>
+                          <li><a href="#none">씨엠립</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="fl">
+                    <ul class="ssub2-4">
+                      <li><a href="#none">대만</a>
+                        <ul>
+                          <li><a href="#none">타오페이</a></li>
+                          <li><a href="#none">가오슝</a></li>
+                          <li><a href="#none">타이중</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                </ul>
+              </li>
+
+              <li class="fl"><a href="#none">일본</a>
+                <ul class="nav2-sub4 ssub3 clear">
+                  <li class="fl">
+                    <ul class="ssub3-1">
+                      <li><a href="#none">오사카</a></li>
+                      <li><a href="#none">교토</a></li>
+                      <li><a href="#none">토쿄</a></li>
+                    </ul>
+                  </li>
+                  <li class="fl">
+                    <ul class="ssub3-2">
+                      <li><a href="#none">후쿠오카</a></li>
+                      <li><a href="#none">나가사키</a></li>
+                    </ul>
+                  </li>
+                  <li class="fl">
+                    <ul class="ssub3-3">
+                      <li><a href="#none">삿포로</a></li>
+                      <li><a href="#none">오키나와</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="fl"><a href="#none">남태평양</a>
+                <ul class="nav2-sub4 ssub4 clear">
+                  <li class="fl">
+                    <ul class="ssub4-1">
+                      <li><a href="#none">괌</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="fl">
+                    <ul class="ssub4-2">
+                      <li><a href="#none">사이판</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="fl">
+                    <ul class="ssub4-3">
+                      <li><a href="#none">호주</a>
+                        <ul>
+                          <li><a href="#none">시드니</a></li>
+                          <li><a href="#none">골드코스트</a></li>
+                          <li><a href="#none">멜버른</a></li>
+                          <li><a href="#none">케언즈</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="fl">
+                    <ul class="ssub4-4">
+                      <li><a href="#none">뉴질랜드</a>
+                        <ul>
+                          <li><a href="#none">오클랜드</a></li>
+                          <li><a href="#none">퀸스타운</a></li>
+                          <li><a href="#none">크라이스트처치</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="fl"><a href="#none">유럽/중동</a>
+                <ul class="nav2-sub4 ssub5 clear">
+                  <li class="fl">
+                    <ul class="ssub5-1">
+                      <li><a href="#none">서유럽</a>
+                        <ul>
+                          <li><a href="#none">로마</a></li>
+                          <li><a href="#none">피렌체</a></li>
+                          <li><a href="#none">런던</a></li>
+                          <li><a href="#none">파리</a></li>
+                          <li><a href="#none">인터라켄</a></li>
+                          <li><a href="#none">취리히</a></li>
+                          <li><a href="#none">프랑크푸르트</a></li>
+                          <li><a href="#none">뮌헨</a></li>
+                          <li><a href="#none">베를린</a></li>
+                          <li><a href="#none">암스테르담</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="fl">
+                    <ul class="ssub5-2">
+                      <li><a href="#none">동유럽</a>
+                        <ul>
+                          <li><a href="#none">프라하</a></li>
+                          <li><a href="#none">비엔나</a></li>
+                          <li><a href="#none">잘츠부르크</a></li>
+                          <li><a href="#none">부다페스트</a></li>
+                          <li><a href="#none">두브르부니크</a></li>
+                          <li><a href="#none">자그레브</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="fl">
+                    <ul class="ssub5-3">
+                      <li><a href="#none">스페인/포르투갈</a>
+                        <ul>
+                          <li><a href="#none">마드리드</a></li>
+                          <li><a href="#none">바로셀로나</a></li>
+                          <li><a href="#none">리스본</a></li>
+                        </ul>
+                      </li>
+
+                      <li><a href="#none">튀르키예(터키)</a></li>
+                      <li><a href="#none">그리스/아테네</a></li>
+                      <li><a href="#none">덴마크</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="fl">
+                    <ul class="ssub5-4">
+                      <li><a href="#none">아랍에미레이트</a>
+                        <ul>
+                          <li><a href="#none">두바이</a></li>
+                          <li><a href="#none">아부다비</a></li>
+                        </ul>
+                      </li>
+
+                      <li><a href="#none">카타르</a>
+                        <ul>
+                          <li><a href="#none">도하</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="fl"><a href="#none">미주</a>
+                <ul class="nav2-sub4 ssub6 clear">
+                  <li class="fl">
+                    <ul class="ssub6-1">
+                      <li><a href="#none">하와이</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="fl">
+                    <ul class="ssub6-2">
+                      <li><a href="#none">미국본토</a>
+                        <ul>
+                          <li><a href="#none">로스트엔젤레스</a></li>
+                          <li><a href="#none">라스베가스</a></li>
+                          <li><a href="#none">그랜드캐년</a></li>
+                          <li><a href="#none">샌프란시스코</a></li>
+                          <li><a href="#none">뉴욕</a></li>
+                          <li><a href="#none">시애틀</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="fl">
+                    <ul class="ssub6-3">
+                      <li><a href="#none">캐나다</a>
+                        <ul>
+                          <li><a href="#none">토론토</a></li>
+                          <li><a href="#none">밴쿠버</a></li>
+                          <li><a href="#none">밴프</a></li>
+                        </ul>
+                      </li>
+
+                      <li><a href="#none">멕시코/칸쿤</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="fl"><a href="#none">중국/홍콩/마카오</a>
+                <ul class="nav2-sub4 ssub7 clear">
+                  <li class="fl">
+                    <ul class="ssub7-1">
+                      <li><a href="#none">중국</a>
+                        <ul>
+                          <li><a href="#none">북경</a></li>
+                          <li><a href="#none">상해</a></li>
+                          <li><a href="#none">장가계</a></li>
+                          <li><a href="#none">청도</a></li>
+                          <li><a href="#none">하이난(산야)</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="fl">
+                    <ul class="ssub7-2">
+                      <li><a href="#none">홍콩/마카오</a>
+                        <ul>
+                          <li><a href="#none">홍콩</a></li>
+                          <li><a href="#none">마카오</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="fl"><a href="#none">국내/해외 렌터카</a></li>
+            </ul>
+          </li>
+
+          <li class="fl"><a href="#none">제주/국내여행</a>
+            <ul class="nav2-gnb clear">
+              <li class="fl"><a href="#none">제주/국내여행 홈</a>
+                <ul class="nav2-sub5 sssub1 clear">
+                  <li class="fl">
+                    <ul class="sssub1-1">
+                      <li><a href="#none">제주도</a></li>
+                      <li><a href="#none">경상남도</a></li>
+                      <li><a href="#none">충청남도</a></li>
+                    </ul>
+                  </li>
+                  <li class="fl">
+                    <ul class="sssub1-2">
+                      <li><a href="#none">부산</a></li>
+                      <li><a href="#none">전라남도</a></li>
+                      <li><a href="#none">충청북도</a></li>
+                    </ul>
+                  </li>
+                  <li class="fl">
+                    <ul class="sssub1-3">
+                      <li><a href="#none">강원도</a></li>
+                      <li><a href="#none">전라남도</a></li>
+                      <li><a href="#none">인천</a></li>
+                    </ul>
+                  </li>
+                  <li class="fl">
+                    <ul class="sssub1-4">
+                      <li><a href="#none">서울</a></li>
+                      <li><a href="#none">전라북도</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="fl"><a href="#none">제주도렌터카</a></li>
+
+              <li class="fl"><a href="#none">울릉도</a>
+                <ul class="nav2-sub5 sssub3 clear">
+                  <li class="fl">
+                    <ul class="sssub3-1">
+                      <li><a href="#none">강릉/묵호항</a></li>
+                    </ul>
+                  </li>
+                  <li class="fl">
+                    <ul class="sssub3-2">
+                      <li><a href="#none">포항영일만</a></li>
+                    </ul>
+                  </li>
+                  <li class="fl">
+                    <ul class="sssub3-3">
+                      <li><a href="#none">포항항/후포항</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="fl"><a href="#none">내나라여행</a></li>
+              <li class="fl"><a href="#none">국내골프</a></li>
+              <li class="fl"><a href="#none">단독여행문의</a></li>
+            </ul>
+          </li>
+
+          <li class="fl"><a href="#none">허니문</a></li>
+
+          <li class="fl"><a href="#none">골프</a></li>
+
+          <li class="fl"><a href="#none">제우스</a></li>
+
+          <li class="fl"><a href="#none">MICE</a></li>
+
+          <li class="fl"><a href="#none">하나LIVE</a></li>
+
+          <li class="fl"><a href="#none"><!-- 공백 --></a></li>
+
+          <li class="fl"> <a href="#none"> <!-- 공백 --></a></li>
+
+          <li class="fl"><a href="#none">여행기획전</a></li>
+
+          <li class="fl"><a href="./cmtrip.html"><span>●</span>&nbsp;맞춤여행</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="contents">
+      <!-- 배너1 이미지 -->
+      <div class="banner1">
+        <img src="tripimage/banner1.jpg" alt="">
+      </div>
+
+      <!-- 콘텐츠1 -->
+      <div class="con1 clear">
+        <h3 class="fl">견적 문의하기</h3>
+        <p class="fl"><a href="#none">내 문의확인</a></p>
+
+          <ul class="estimate clear">
+            <li class="fl"><a href="#none">
+              <img src="tripimage/con1/con1-1.png" alt="" class="fl">
+              <div class="li-ch1 fl">
+                <p>법인단체/박람회 ></p>
+                <p>하나투어 기업여행 서비스</p>
+              </div>
+            </a></li>
+
+            <li class="fl"><a href="#none">
+              <img src="tripimage/con1/con1-2.png" alt="" class="fl">
+              <div class="li-ch2 fl">
+                <p><span>해외/국내</span>&nbsp;맞춤여행 ></p>
+                <p>내 맘대로 여행일정</p>
+                </div>
+            </a></li>
+
+            <li class="fl"><a href="#none">
+              <img src="tripimage/con1/con1-3.png" alt="" class="fl">
+              <div class="li-ch3 fl">
+                <p>허니문 ></p>
+                <p>우리끼리 프라이빗하게</p>
+                </div>
+            </a></li>
+
+            <li class="fl"><a href="#none">
+              <img src="tripimage/con1/con1-4.png" alt="" class="fl">
+              <div class="li-ch4 fl">
+                <p>제우스 ></p>
+                <p>하나투어만의 하이엔드 여행</p>
+                </div>
+            </a></li>
+          </ul>
+      </div>
+
+      <div class="con2">
+        <div class="banner2">
+          <img src="tripimage/banner2.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="fo1">
+        <!-- 공백 -->
+      </div>
+      <div class="fo2 clear">
+        <div class="fl">공지</div>
+
+
+        <div class="notice fl">
+          <div><a href="#none"><하나live> 23년 04월 19일 방송 이벤트 당첨자 안내 (스타벅스 기프티콘) </a></div>
+          <div><a href="#none"><퇴근길LIVE> 23년 04월 17일 방송 소통 이벤트 당첨자 안내 (스타벅스 기프티콘)</a></div>
+          <div><a href="#none"><하나LIVE>23년 04월 12일 방송 선착순 혜택 당첨자 안내(석식BBQ + 별빛고운카드 + 주유권)</a></div>
+        </div>
+
+        <div class="plus fl">
+          <a href="#none">＋더보기</a>
+        </div>
+
+        <div class="fr">
+          <img src="image/footer/naverblog.png" alt="" class="fl">
+          <img src="image/footer/youtube.png" alt="" class="fl">
+          <img src="image/footer/facebook.png" alt="" class="fl">
+          <img src="image/footer/instagram.png" alt="" class="fl">
+          <img src="image/footer/kakaoplus.png" alt="" class="fl">
+          <img src="image/footer/kakaostory.png" alt="" class="fl">
+        </div>
+      </div>
+
+      <div class="fo3">
+        <ul class="fo3-box clear">
+          <!-- 회사소개,이용약관 등 -->
+          <li class="fl">
+            <ul class="rule">
+              <li class="fl"><a href="#none">
+                회사소개
+              </a></li>
+              <li class="fl"><a href="#none">
+                이용약관
+              </a></li>
+              <li class="fl"><a href="#none">
+                개인정보처리방침
+              </a></li>
+              <li class="fl"><a href="#none">
+                여행약관
+              </a></li>
+              <li class="fl"><a href="#none">
+                해외여행자보험
+              </a></li>
+              <li class="fl"><a href="#none">
+                마케팅제휴
+              </a></li>
+              <li class="fl"><a href="#none">
+                공식인증예약선터 검색
+              </a></li>
+            </ul>
+
+            <!-- 기타1 -->
+            <ul class="etc1 clear">
+              <li class="fl">(주)하나투어</li>
+              <li class="fl">대표:송미선</li>
+              <li class="fl">주소:(00000)서울특별시 종로구 인사동</li>
+            </ul>
+
+            <!--기타2-->
+            <ul class="etc2 clear">
+              <li class="fl">사업자등록번호: 102-00-00000</li>
+              <li class="fl"><a href="#none">사업자정보확인</a></li>
+              <li class="fl">통신판매업신고번호: 종로01-1806호</li>
+              <li class="fl">관광사업자 등록번호: 제1993-0000006호</li>
+            </ul>
+
+            <!-- 기타3 -->
+            <ul class="etc3 clear">
+              <li class="fl">개인정보 보호책임자: 전준형</li>
+              <li class="fl">영업보증보험:22억 1천만원 가입</li>
+              <li class="fl">팩스:02-000-0000</li>
+              <li class="fl">이메일:15771233@-</li>
+            </ul>
+
+            <!-- 기타4 -->
+            <ul class="etc4 clear">
+              <li class="fl">고객센터: 1577-0000
+              </li>
+              <li class="fl">해외항공권문의 1899-1833</li>
+            </ul>
+
+            <!-- 기타5 -->
+            <ul class="etc5">
+              <li>위 사이트는 비상업용 사이트임을 안내해드립니다.</li>
+              <li>신정화@포토폴리오</li>
+            </ul>
+          </li>
+
+         
+          <!-- 하나은행 구매안전 서비스 -->
+          <li class="fr">
+            <p>하나은행 구매안전 서비스
+            </p>
+            <br> <!--공백-->
+            <p>고객님은 안전거래를 위해 현금으로 결제시 
+              <br>(주)하나투어에서 가입한 하나은행으로 <br>구매안전서비스를 이용하실 수 있습니다.</p>
+            <br><!--공백-->
+            <p><a href="#none">서비스 가입사실 확인 > </a></p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- fo4 -->
+      <div class="fo4 clear">
+        <div class="fo4-1 fl">
+          <div>
+            <img src="image/footer/ft9.png" alt="" class="fl">
+            <span class="fl">대한민국 <br>100대 <br>브랜드</span>
+          </div>
+          <div>
+            <img src="image/footer/ft2.png" alt="" class="fl">
+            <span class="fl">한국능률협회선정 <br>15년연속(2005~2019) <br>브랜드 파워 1위
+            </span>
+          </div>
+          <div>
+            <img src="image/footer/ft3.png" alt="" class="fl">
+            <span class="fl">브랜드소톡선정 <br>15susdusthr(2005~2019) <br>브랜드스타 1위</span>
+          </div>
+          <div>
+            <img src="image/footer/ft4.png" alt="" class="fl">
+            <span class="fl">KMAC 선정 11년 연속<br>(2009~2019) 한국산업의 <br>고객만족도 여행사부문1위</span>
+          </div>
+          <div>
+            <img src="image/footer/ft5.png" alt="" class="fl">
+            <span class="fl">국가고객만족도(NCSI) <br>여행사 서비스업 부문 <br>연속1위 (2014~2019)</span>
+          </div>
+          <div>
+            <img src="image/footer/ft6.png" alt="" class="fl">
+            <span class="fl">한국능률협회선정<br>12년연속(2017~2019) <br>한국에서 존경받는 기업 대상</span>
+          </div>
+          <div>
+            <img src="image/footer/ft7.png" alt="" class="fl">
+            <span class="fl">2016년 <br> 존경받는사회공헌기업대상 <br>메세나&문화예술부문 대상</span>
+          </div>
+          <div>
+            <img src="image/footer/ft8.png" alt="" class="fl">
+            <span class="fl">2017년 제5회 <br>사랑의 열매 <br>기부 분야 금상 수상</span>
+          </div>
+          <div>
+            <img src="image/footer/ft10.png" alt="" class="fl">
+            <span class="fl">2018년 <br>문화체육관광부 <br>문화예술후원 우수기관 인증</span>
+          </div>
+
+        </div>
+        <div class="fo4-2 fl">
+          <img src="image/footer/mark_01.png" alt="">
+          <img src="image/footer/mark_03_new.png" alt="">
+          <img src="image/footer/mark1_eprivacy.png" alt="">
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- 사이드바 -->
+  <div class="sidebar-wrap">
+    <div class="side1"><a href="#none">
+        <img src="image/sidebar/sideimg.png" alt="">
+        <p>채팅상담</p>
+      </a>
+    </div>
+    <div class="side2">
+      <span>최근 본 상품</span>
+      <span>(0)</span>
+      <span><i class="fa-solid fa-chevron-down"></i></span>
+    </div>
+    <div class="side2-con">최근 본 상품이 없습니다.</div>
+    <div class="top">
+      <span><i class="fa-solid fa-caret-up"></i>
+      </span><span>TOP</span>
+    </div>
+  </div>
+</body>
+
+</html>
